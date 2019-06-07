@@ -1,15 +1,25 @@
-<!-- resources/views/child.blade.phpとして保存 -->
-
 @extends('layouts.app')
 
-@section('title', 'Page Title')
-
-@section('sidebar')
-    @@parent
-
-    <p>ここはメインのサイドバーに追加される</p>
-@endsection
-
 @section('content')
-    <p>ここが本文のコンテンツ</p>
+    <div class="main-content">
+        <div class="post-main__message">
+            <div class="post-main__message--name">岡山和樹</div>
+            <div class="post-main__message--date">2019年6月16日 15:40</div>
+            <div class="post-main__message--body">
+                元気ですか？僕は元気です。
+            </div>
+        </div>
+
+        <div class="post-main__message">
+            <div class="post-main__message--name">岡山和樹</div>
+            <div class="post-main__message--date">2019年6月16日 15:40</div>
+            <div class="post-main__message--body">
+                元気ですか？僕は元気です。
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <small>©️KazukiOkayama</small>
+    </footer>
 @endsection
