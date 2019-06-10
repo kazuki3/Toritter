@@ -12,7 +12,9 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <h1 class="header__logo">Toritter</h1>
+        <a href="{{ route('top') }}">
+          <h1 class="header__logo">Toritter</h1>
+        </a>
         <div class="header__button">
           @if( Auth::check() )
             <a href="{{ route('post') }}" class="header__list--button">投稿する</a>

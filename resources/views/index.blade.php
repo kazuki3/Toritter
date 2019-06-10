@@ -15,5 +15,8 @@
     </div>
     <footer>
         <small>©️KazukiOkayama</small>
+        <a href="#">
+            <small>お問い合わせ</small>
+        </a>
     </footer>
 @endsection
