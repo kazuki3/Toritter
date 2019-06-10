@@ -11,10 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', 'PostController@index')->name('top');
 
+Route::get('/post', function () {
+    return view('post');
+})->name('post');
+
+Route::post('post', 'PostController@create')->name('post.create');
 
 
 

@@ -115,7 +115,24 @@ header {
 
 .header__list--button {
   font-family: "M PLUS Rounded 1c";
-  width: 90px;
+  padding: 0 10px;
+  height: 43px;
+  line-height: 40px;
+  border: 3px solid #226597;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #f3f9fb;
+  color: #226597;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header__list--button-logout{
+  font-family: "M PLUS Rounded 1c";
+  padding: 0 10px;
   height: 43px;
   line-height: 40px;
   border: 3px solid #226597;
@@ -180,6 +197,56 @@ header {
   clear: both;
 }
 
+
+/* フォーム */
+.form-box {
+  width: 500px;
+  height: 300px;
+  background-color: #ffffff;
+  border: 1px solid #87C0CD;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: "M PLUS Rounded 1c";
+}
+
+.form-title {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.form-label {
+  display: inline-block;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.form-area {
+  display: inline-block;
+  width: 400px;
+  height: 150px;
+}
+
+.btn-wrapper {
+  text-align: right;
+  padding-top: 10px;
+}
+.btn-submit {
+  display: inline-block;
+  height: 35px;
+  width: 60px;
+  font-size: 16px;
+  color: #226597;
+  border: solid 2px #226597;
+  border-radius: 3px;
+  font-family: "M PLUS Rounded 1c";
+}
+.btn-submit:hover {
+  background-color: #226597;
+  color: #f3f9fb;
+}
 
 /* フッター */
 footer {
