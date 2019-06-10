@@ -14,8 +14,16 @@
       <div class="header-container">
         <h1 class="header__logo">Toritter</h1>
         <div class="header__button">
-            <a class="header__list--button">投稿する</a>
-            <a class="header__list--button">ログイン</a>
+          @if( Auth::check() )
+            <a href="{{ route('post') }}" class="header__list--button">投稿する</a>
+            <a class="header__list--button-logout" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="header__list--button">ログアウト</a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+              </form>
+          @else
+            <a href="{{ route('login') }}" class="header__list--button">ログイン</a>
+            <a href="{{ route('register') }}" class="header__list--button">新規登録</a>
+          @endif
         </div>
       </div>
     </header>
