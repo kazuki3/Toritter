@@ -15,7 +15,7 @@
     </div>
     <footer>
         <small>©️KazukiOkayama</small>
-        <a href="#">
+        <a href="{{ route('contact') }}">
             <small>お問い合わせ</small>
         </a>
     </footer>

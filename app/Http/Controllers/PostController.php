@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Post;
+use App\Http\Requests\CreatePost;
 
 class PostController extends Controller
 {
@@ -14,7 +15,7 @@ class PostController extends Controller
         return view('index', ['posts' => $posts]);
     }
 
-    public function create(Request $request) {
+    public function create(CreatePost $request) {
         \Debugbar::info($request);
         $post = new Post();
         $post->comment = $request->comment;
