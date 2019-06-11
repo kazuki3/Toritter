@@ -201,7 +201,6 @@ header {
 /* フォーム */
 .form-box {
   width: 500px;
-  height: 300px;
   background-color: #ffffff;
   border: 1px solid #87C0CD;
   border-radius: 10px;
@@ -258,4 +257,68 @@ footer {
   color: #f3f9fb;
   position: absolute;
   bottom: 0;
+}
+
+
+/* お問い合わせ */
+.contact-form {
+  width: 600px;
+  background-color: #ffffff;
+  padding: 10px 50px 30px;
+  margin: 0 auto;
+  font-family: "M PLUS Rounded 1c";
+}
+.icon {
+  font-size: 24px;
+  padding-bottom:20px;
+}
+
+.contact-form dl dt {
+  width: 500px;
+  padding: 10px 0;
+  float: left;
+  clear: both;
+}
+.contact-form dl dd {
+  padding: 10px 0;
+}
+.contact-form .name {
+  width: 240px;
+  height: 30px;
+}
+.contact-form .email {
+  width: 300px;
+  height: 30px;
+}
+.contact-form .tel {
+  width: 240px;
+  height: 30px;
+}
+.contact-form .select {
+  width: 180px;
+  height: 30px;
+}
+.contact-form .message {
+  width: 500px;
+  height: 100px;
+}
+
+.contact-btn {
+  display: inline-block;
+  height: 35px;
+  width: 60px;
+  font-size: 16px;
+  color: #226597;
+  border: solid 2px #226597;
+  border-radius: 3px;
+}
+
+.contact-btn:hover {
+  background-color: #226597;
+  color: #f3f9fb;
+}
+
+.error-message {
+  color: red;
+  padding-left: 10px;
 }

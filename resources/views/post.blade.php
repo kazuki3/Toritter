@@ -7,7 +7,7 @@
         {!! csrf_field() !!}
 
         <div class="form-content">
-          <label for="comment" class="form-label">投稿内容</label><br>
+          <label for="comment" class="form-label">投稿内容<span class="error-message">{{$errors->first('comment')}}</span></label><br>
           <textarea name="comment" class="form-area" id="comment" placeholder="今日はいい天気です。"></textarea>
         </div>
 
