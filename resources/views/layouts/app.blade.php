@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>Toritter</title>
-    <link rel="stylesheet" href="css/common.css"/>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <script type="text/javascript" src="{{ asset('/js/sample.js') }}"></script>
     @yield('stylesheet')
   </head>
   <body>

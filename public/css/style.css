@@ -302,11 +302,15 @@ footer {
   width: 500px;
   height: 100px;
 }
+.contact-form .password {
+  width: 180px;
+  height: 30px;
+}
 
 .contact-btn {
   display: inline-block;
   height: 35px;
-  width: 60px;
+  padding: 0 10px;
   font-size: 16px;
   color: #226597;
   border: solid 2px #226597;
